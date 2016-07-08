@@ -1,0 +1,11 @@
+<serviceGroup>
+    <service name="MultiAttributeSearch" scope="transportsession">
+        <transports>
+            <transport>https</transport>
+        </transports>
+        <parameter name="ServiceClass">org.wso2.carbon.multi.attribute.search.service.CustomUserStoreManager</parameter>
+    </service>
+    <parameter name="adminService" locked="true">true</parameter>
+    <parameter name="hiddenService" locked="true">true</parameter>
+    <parameter name="AuthorizationAction" locked="true">/permission/protected/manage</parameter>
+</serviceGroup>
